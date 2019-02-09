@@ -7,7 +7,10 @@ document.getElementById('button').addEventListener('click', (e) => {
     
     xhr.onload = function() {
         if(this.status == 200) {
-            console.log(xhr.responseText);
+            document.getElementById('response').innerHTML = xhr.responseText;
+            console.log(xhr.response);
+        } else if (this.status == 404) {
+            document.getElementById('response').innerHTML = 'Document not found.';
         }
     }
     
