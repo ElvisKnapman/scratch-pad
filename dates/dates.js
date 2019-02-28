@@ -1,6 +1,6 @@
 'use strict';
 
-// crete new instance of the date object
+// create new instance of the date object
 const now = new Date();
 
 console.log(`Year: ${now.getFullYear()}`);
